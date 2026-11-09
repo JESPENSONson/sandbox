@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="generer">Trykk for passord:</label>
+    <button id="generer" name="generer">Generer passord</button>
+    <p>Her er passordet ditt: <span id="passordutskrift"></span></p>
+
+    <script>
+        //REGLER OG KONFIGURASJON
+        let passord = ""
+        const tillatteTegn = "abcdefghijklmnopqrstuvwxyzæøåABDCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ123456789"
+        //tillatteTegn.toArray()
+
+        
+        document.getElementById("generer").addEventListener("click", function (event) {
+            for (teller = 0; teller < 13; teller++) {
+                const tilfeldigTegn = Math.floor(Math.random() * tillatteTegn.length())
+    
+            }
+            
+            document.getElementById("passordutskrift").innerHTML = "Knappen er trykket"
+        })
+    </script>
+</body>
+</html>

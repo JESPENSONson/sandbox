@@ -1,0 +1,50 @@
+body {
+    font-family: "Gill Sans", Arial, sans-serif;
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    p#style {
+        font-size: 1.5rem;
+    }
+
+    p#lineHeight {
+        line-height: 1.6px;
+    }
+}
+
+div.boks1 {
+    background-color: cadetblue;
+    opacity: 0.5;
+    /* 
+    Forskjellen mellom de to metodene er
+    RGBA/HSLA endrer boksen, mens bare background-color
+    og opacity endrer boksen og teksten respektivt 
+    */
+}
+
+div.boks2 {
+    background-color: #ff5733;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+div.boks3 {
+    background-color: rgb(255, 0, 34);
+    background-image: url("https://picsum.photos/400/200");
+    background-size: cover;
+    background-size: contain;
+    text-align: center;
+    /* 
+    Forskjellen er at cover strekker bildet for å dekke hele
+    mens contain bruker mange små bilder av det samme bildet
+    for å dekke hele boksen¨
+    */
+}
+
+h1 {
+    color: hsl(11, 100%, 60%)
+}
+
