@@ -1,0 +1,61 @@
+Her er en komplett HTML-side med innebygd (inline) CSS og JavaScript som gjør det du beskriver:
+
+```html
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegnteller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        #resultat {
+            margin-top: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tegnteller</h1>
+        <label for="ordInput">Skriv inn et ord:</label>
+        <input type="text" id="ordInput" placeholder="Skriv et ord her">
+        <button onclick="tellTegn()">Tell tegn</button>
+        <div id="resultat"></div>
+    </div>
+
+    <script>
+        function tellTegn() {
+            var ord = document.getElementById("ordInput").value;
+            var antallTegn = ord.length;
+            var melding = "Ordet " + ord + " består av " + antallTegn + " tegn";
+            document.getElementById("resultat").textContent = melding;
+        }
+    </script>
+</body>
+</html>
+```

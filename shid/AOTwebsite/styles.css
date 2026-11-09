@@ -1,0 +1,21 @@
+* {
+    background-color: lightblue;
+}
+
+h1,
+nav {
+    text-align: center;
+}
+
+ul {
+    color: black;
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 10px 100px;
+    justify-content: center;
+    gap: 5px;
+    li {
+        gap: 5px;
+    }
+}
