@@ -2923,6 +2923,647 @@
                     </li>
                 </ul>
             </ol>
+            <h3>Rolle, format og avgrensning</h3>
+            <p>
+                Rolle, format og avgrensning er tre kjerneelementer i god
+                prompt engineering som styrer hvordan en KI forstår oppgaven
+                din og utformer svaret. Ved å definere disse tre elementene
+                tydelig, får du mer presise, relevante og brukbare resultater.
+            </p>
+            <ol>
+                <li><b>Rolle &#40;hvem skal KI-en være?&#41;</b></li>
+                <p>
+                    Rollen bestemmer perspektivet, kunnskapsnivået og tonefallet
+                    i svaret. Du gir KI-en en spesifikk identitet eller ekspertise.
+                </p>
+                <ul>
+                    <li>
+                        <b>Formål:</b> Hjelper modellen med å velge riktig
+                        ordforråd og faglig tyngde.
+                    </li>
+                    <li>
+                        <b>Eksempler:</b> "Du er en erfaren jurist", "Opptre som
+                        en barneskolelærer", eller "Skriv som en markedføringsekspert"
+                    </li>
+                </ul>
+                <li><b>Format &#40;hvordan skal svaret se ut?&#41;</b></li>
+                <p>
+                    Formatet styrer den visuelle og tekstlige strukturen på svaret
+                    slik at det passer direkte til bruksområdet ditt.
+                </p>
+                <ul>
+                    <li>
+                        <b>Formål:</b> Gjør informasjonen enkel å lese og bruke
+                        videre uten mye etterarbeid.
+                    </li>
+                    <li>
+                        <b>Eksempler:</b> Punktliste, tabell, sammenhengende e-post,
+                        steg-for-steg-guide, eller kodeblokk.
+                    </li>
+                </ul>
+                <li><b>Avgrensning &#40;hva er rammene og begrensningene?&#41;</b></li>
+                <p>
+                    Avgrensning setter tydelige grenser for hva KI-en skal ta med,
+                    hva den skal utelate, og hvor langt svaret skal være.
+                </p>
+                <ul>
+                    <li>
+                        <b>Formål:</b> Hindrer at KI-en skriver for langt, sporer
+                        av eller bruker upassende språk.
+                    </li>
+                    <li>
+                        <b>Eksempel:</b> "Maks 150 ord", "Ikke bruk faguttrykk",
+                        "Fokuser kun på norske forhold", eller "Unngå å nevne "
+                    </li>
+                </ul>
+            </ol>
+
+            <h3>Dele opp krevende oppgaver</h3>
+            <p>
+                Å dele opp krevende oppgaver ved hjelp av KI kalles ofte 
+                oppgavenedbrytning, eller prompt chaining. Dette gjør komplekse
+                prosjekter mer håndterbare for både deg og KI-modellen, samtidig
+                som det reduserer feil og gir mer presise svar.
+            </p>
+            
+            <h3>Chain of Thought</h3>
+            <p>
+                Chain of Thought er en teknikk innen KI og prompt engineering
+                som lærer eller instruerer språkmodeller til å bryte ned
+                komplekse problemer i en logisk rekke av mellomliggende trøbbel
+                eller resonnementer før de kommer med et endelig svar.
+            </p>
+
+            <h3>Promptrammeverk</h3>
+            <h4>RTF</h4>
+            <p>
+                RTF er et enkelt og effektivt rammeverk for å skrive instruksjoner
+                til KI, og står for Role, Task, Format. Denne tredelte strukturen
+                gir KI tydelige rammer for hvem de skal opptre som, hva de skal gjøre,
+                og hvordan svaret skal presenteres.
+            </p>
+            <h4>CRAFT</h4>
+            <p>
+                CRAFT-rammeverket er en femstegs metode for å skrive tydelige
+                og presise instruksjoner til GKI. Akronymet står for Context,
+                Role, Action, Format og Tone. Hver bokstav i rammeverket
+                representerer en byggestein som reduserer gjetting hos KI-modellen.
+            </p>
+            <h4>RACE</h4>
+            <p>
+                RACE-rammeverket er en struktur og et system i prompt engineering
+                for å lage nyttige svar fra KI. RACE står for Role, Action, Context,
+                Execute / Expectation. Når vi skriver en veldig kort og åpen prompt,
+                må KI-en gjette hva du egentlig er ute etter. Ved å bruke RACE-modellen
+                gir du KI et tydelig rammeverk som gjør det lettere å treffe blink
+                på første forsøk.
+            </p>
+            <h4>CARE</h4>
+            <p>
+                CARE-rammeverket er en enkel og strukturert metode for å skrive
+                presise prompts til KI. Det står for Context, Action, Result og
+                Example. Ved å inkludere disse fire delene reduserer du igjen gjetting
+                fra KI-en og får mer treffsikre og repeterbare svar.
+            </p>
+            <h4>ROSES</h4>
+            <p>
+                ROSES-rammeverket gjør som alle andre over og står for Role,
+                Objective, Scenario, Expected Solution, Steps.
+            </p>
+
+            <h3>Metaprompting</h3>
+            <p>
+                Metaprompting er en avansert teknikk innen promptengineering der
+                man ikke bare ber en KI om å løse en oppgave direkte, men i stedet
+                ber den om å lage, forbedre eller strukturere prompter for deg.
+                <br>
+                I stedet for å skrive en vanlig, enkel forespørsel, gir du modellen
+                en meta-prompt som definerer oppbygging, rolle, logikk og regler
+                for den endelige prompten.
+            </p>
+            <ol>
+                <li>
+                    <b>Definer målet:</b> Du forteller KI-en hvilken oppgave du
+                    egentlig ønsker å løse.
+                </li>
+                <li>
+                    <b>Be om en mal eller prompt:</b> Du ber KI-en om å generere
+                    den optimale systemprompten som skal til for å løse oppgaven
+                    med høyest mulig presisjon.
+                </li>
+                <li>
+                    <b>Kjør og finjuster:</b> Du bruker den genererte prompten
+                    i en ny samtale for å få det endelige resultatet.
+                </li>
+            </ol>
+            <ul> <b>Hvorfor bruke metaprompting?</b>
+                <li>
+                    <b>Gjerner synsing:</b> Du slipper å gjette hvordan du skal
+                    formulere deg for å få gode svar; KI-en kjenner sin egen
+                    arkitektur og vet hva den reagerer best på.
+                </li>
+                <li>
+                    <b>Standarisering:</b> Du kan lage gjenbrukbare maler for
+                    hele kategorier av oppgaver.
+                </li>
+                <li>
+                    <b>Høyere presisjon:</b> Undersøkelser og bransjeeksempler
+                    viser at stukturerte rammeverk gir drastisk færre misforståelser
+                    og bedre kvalitet på svarene.
+                </li>
+            </ul>
+            <h3>Iterasjon kontra one-shot</h3>
+            <p>
+                Iterasjon og one-shot representerer to ulike måter å jobbe med KI
+                på, der iterasjon handler om å forbedre et resultat steg for steg,
+                mens one-shot handler om å få et ferdig svar på første forsøk.
+                Valget mellom dem avhenger av hvor kompleks oppgaven er, og hvor
+                mye kontroll du ønsker over sluttreslutatet.
+            </p>
+            <table border="1">
+                <thead>
+                    <th>Egenskap</th>
+                    <th>One-shot</th>
+                    <th>Iterasjon</th>
+                </thead>
+                <tbody>
+                    <td>Arbeidsmetode</td>
+                    <td>Du gir én komplett instruks, og bruker svaret direkte.</td>
+                    <td>Du starter enkelt, vurderer svarer og gir oppfølgingsbeskjeder.</td>
+                </tbody>
+                <tbody>
+                    <td>Tidsbruk</td>
+                    <td>Svært raskt for enkle og rutinepregede oppgaver.</td>
+                    <td>Tar lengre tid, men sparer etterarbeid på komplekse prosjekter.</td>
+                </tbody>
+                <tbody>
+                    <td>Presisjon</td>
+                    <td>Gir ofte generiske svar som kan kreve manuell redigering.</td>
+                    <td>Gir skreddersydde og nøyaktige resultater tilpasset dine behov.</td>
+                </tbody>
+                <tbody>
+                    <td>Kontroll</td>
+                    <td>Lav kontroll underveis i prosessen.</td>
+                    <td>Høy kontroll fordi du kan styre retning, tone og detaljer løpende.</td>
+                </tbody>
+            </table>
+
+            <h3>RAG, Retrieval Augmented Generation</h3>
+            <p>
+                RAG er en KI-teknikk som kobler LLM til eksterne kunnskapsbanker
+                eller bedriftens egne dokumenter før de svarer på et spørsmål.
+            </p>
+            <h4>Hvordan fungerer det?</h4>
+            <p>
+                I stedet for å la en språkmodell gjette eller basere seg utelukkende
+                på sin opprinnelige treningsdata, følger RAG denne prosessen:
+            </p>
+            <ol>
+                <li>
+                    <b>Retrieval:</b> Systemet søker i en ekstern database etter
+                    dokumenter, filer eller data som matcher brukerens spørsmål.
+                </li>
+                <li>
+                    <b>Augmentation:</b> De relevante tekstbitene hentes ut og
+                    bakes inn i prompten som sendes til KI-en.
+                </li>
+                <li>
+                    <b>Generation:</b> Språkmodellen skriver et svar som er strengt
+                    forankret i disse eksterne kildene.
+                </li>
+            </ol>
+            <ul> <b>Hvorfor brukes RAG?</b>
+                <li>
+                    <b>Mindre hallusinsasjoner:</b> Svarene trekkes fra faktiske
+                    dokumenter, noe som reduserer feilaktig eller oppspunnet
+                    informasjon betydelig.
+                </li>
+                <li>
+                    <b>Private data:</b> Lar deg bruke AI på din bedrifts interne
+                    manualer, akriver eller kundedata uten å måtte trene om hele
+                    språkmodellen.
+                </li>
+                <li>
+                    <b>Kildehenvisning:</b> Gjør det enklere å sjekke <i>hvor</i>
+                    informasjonen kommer fra.
+                </li>
+            </ul>
+            <h4>Fallgruver</h4>
+            <p>
+                Når du bygger og setter opp RAG i produksjon, skjer de fleste
+                feilene ikke i selve KI-en, men i måten data hentes, behandles
+                og presenteres på.
+            </p>
+            <ol> <b>De sju klassise RAG-fallgruvene</b>
+                <li><b>Missing content</b></li>
+                <p>
+                    Svaret finnes faktisk ikke i dokumentene du har indeksert.
+                    Modellen prøver likevel å gjette eller hallusinere et svar.
+                </p>
+                <li><b>Missed top rank</b></li>
+                <p>
+                    Den riktige tekstbiten finnes i databasen, men havner langt
+                    nede på søkeresultatlisten og blir aldri vurdert.
+                </p>
+                <li><b>Not in context</b></li>
+                <p>
+                    Dokumentet som ble hentet opp i søket, men ble kuttet ut eller
+                    druknet i mengden når konteksten ble satt sammen til språkmodellen.
+                </p>
+                <li><b>Not extracted</b></li>
+                <p>
+                    Riktig tekstbit når fram til KI-en, men modellen klarer ikke
+                    å trekke ut eller identifisere selve svaret på grunn av rotete
+                    eller dårlig formulert tekst.
+                </p>
+                <li><b>Wrong format</b></li>
+                <p>
+                    Modellen svarer riktig på innholdet, men klarer ikke levere
+                    svaret i formatet du ba om.
+                </p>
+                <li><b>Incorrect specificity</b></li>
+                <p>
+                    Svaret blir enten alt for generelt eller alt for spesifikt i
+                    forhold til det brukeren egentlig spurte om.
+                </p>
+                <li><b>Incomplete answer</b></li>
+                <p>
+                    Svaret tar med deler av informasjonen, men utelater kritiske
+                    biter som lå i andre dokumenter eller avsnitt.
+                </p>
+            </ol>
+
+            <h3>Ymse definisjon på KI-agent</h3>
+            <p>
+                En KI-agent er et autonomt datasystem som kan resonnere, ta egne
+                valg og utføre handlinger i digitale miljøer for å nå et overordnet
+                mål. I motsetning til verktøy som bare svarer på spørsmål, jobber
+                en agent selvstendig gjennom flere trinn til oppgaven er løst.
+            </p>
+            <ul> <b>De fire byggesteinene i en KI-agent</b>
+                <li>
+                    <b>LLM:</b> Dette er agentens "hjerne". Modellen forstår
+                    instruksjoner, resonnerer rundt problemer og formulerer svar
+                    eller neste steg i prosessen.
+                </li>
+                <li>
+                    <b>Planlegging:</b> Agenten bryter ned et stort og komplekst
+                    mål i mindre, håndterbare deloppgaver. Den kan også evaluere
+                    egne resultater underveis og justere planen hvis noe feiler.
+                </li>
+                <li>
+                    <b>Minne:</b> Dette gjør at agenten husker kontekst og lærer.
+                    Korttidsminnet holder styr på den pågående oppgaven, mens
+                    langtidsminnet lagrer tildigere erfaringer, brukerpreferanser
+                    og fakta over tid.
+                </li>
+                <li>
+                    <b>Verktøy:</b> Dette er agentens "hender" som lar den samhandle
+                    med omverdenen. Verktøy kan være nettsøk, kalkulatorer, kodekjøring
+                    eller API-koblinger til e-post, kalender og bedriftens databaser.
+                </li>
+            </ul>
+
+            <table border="1">
+                <thead>
+                    <th>Egenskap</th>
+                    <th>Chatbot</th>
+                    <th>Fast arbeidsflyt</th>
+                    <th>KI-agent</th>
+                </thead>
+                <tbody>
+                    <td>Hovedoppgave</td>
+                    <td>Svare på spørsmål og føre samtaler.</td>
+                    <td>Følge en forhåndsbestemt oppskrift steg for steg.</td>
+                    <td>Nå et mål på egenhånd gjennom utforskning og valg.</td>
+                </tbody>
+                <tbody>
+                    <td>Styring</td>
+                    <td>Styres direkte av brukerens meldinger.</td>
+                    <td>Styres av faste regler satt opp av en utvikler.</td>
+                    <td>Styrer seg selv basert på målet og tilbakemeldinger fra miljøet.</td>
+                </tbody>
+                <tbody>
+                    <td>Fleksibilitet</td>
+                    <td>Lav. Gir tekstsvar, men utfører ikke handlinger.</td>
+                    <td>Middels. Håndterer kun de scanarioene som er programmert inn.</td>
+                    <td>Høy. Tilpasser seg uventede feil og velger nye veier selv.</td>
+                </tbody>
+                <tbody>
+                    <td>Bruk av verktøy</td>
+                    <td>Ingen eller svært begrenset.</td>
+                    <td>Bruker spesifikke verktøy i en fast rekkefølge.</td>
+                    <td>Velger selv hvilke verktøy som trengs og når de skal brukes.</td>
+                </tbody>
+                <tbody>
+                    <td>Eksempel</td>
+                    <td>En kundeservice-bot som svarer på åpningstider.</td>
+                    <td>En automasjon som lagrer vedlegg fra e-post til Google Drive.</td>
+                    <td>En assistent som planlegger en reise, sjekker kalenderen og bestiller billetter.</td>
+                </tbody>
+            </table>
+            <h3>Tokenmaxxing og vibecoding, når er det uforsvarlig?</h3>
+            <p>
+                Tokenmaxxing er en praksis der bedrifter eller ansatte bevisst
+                forsøker å maksimere forbruket av AI-tokens som et feilaktig mål
+                på produktivitet og innovasjon.
+                <br>
+                Grunnen til at dette er problematisk kan være astronomiske konstnader
+                for bedriften, kvalitetsforringelse som sier at overdreven bruk
+                ofte fører til "context rot", at AI-en mister oversikten i store
+                eller støyete dialoger. Og Goodharts lov som sier at når en måling
+                blir et mål i seg selv, slutter den å være en god måling. Høyt
+                forbruk betyr sjeldent bedre kvalitet; det resulterer ofte i
+                meningsløs "jobbslop" og kodekaos.
+            </p>
+            <p>
+                Vibecoding betyr å bygge programvare, nettsider eller spill ved
+                å beskrive hva du ønsker på vanlig, naturlig språk til en KI,
+                i stedet for å skrive koden selv linje for linje.
+                <br>
+                Problematikk oppstår her når det blir for stort og komplekst.
+                KI-en kan finne opp funksjoner eller metoder som ikke finnes,
+                koden kan bli rotete og vanskelig å rydde opp i, og KI-generert
+                kode kan inneholde ukjente sårbarheter som en nybegynner ikke
+                oppdager.
+            </p>
+            <table border="1">
+                <thead>
+                    <th>Egenskap</th>
+                    <th>Sterk skymodell</th>
+                    <th>Lokal modell</th>
+                </thead>
+                <tbody>
+                    <td>Intelligens og kapasitet</td>
+                    <td>Svært høy. Kan løse komplekse oppgaver, kode hele systemer og resonnere dypt.</td>
+                    <td>God til moderat. Kjempebra på enkle oppgaver, oppsummering og enkel skriving.</td>
+                </tbody>
+                <tbody>
+                    <td>Personvern</td>
+                    <td>Data sendes over internett til tredjepart. Krever tillit og databehandleravtaler.</td>
+                    <td>100% privat. Ingen data forlater enheten din.</td>
+                </tbody>
+                <tbody>
+                    <td>Maskinvarekrav</td>
+                    <td>Ingen. Krever kun en nettleser og internettforbindelse.</td>
+                    <td>Høye. Krever mye RAM og en god GPU.</td>
+                </tbody>
+                <tbody>
+                    <td>Kostnad</td>
+                    <td>Løpende abonnementskostnad eller betaling per bruk.</td>
+                    <td>Engangskostnad i maskinvare, gratis å kjøre etterpå.</td>
+                </tbody>
+                <tbody>
+                    <td>Tilgjengelighet</td>
+                    <td>Krever stabil internettforbindelse.</td>
+                    <td>Fungerer helt offline.</td>
+                </tbody>
+            </table>
+            <ol> <b>Nærmere forklart</b>
+                <li><b>Skymodell</b></li>
+                <p>
+                    En skymodell er en enorm språkmodell med hundrevis av milliarder
+                    parametere. Fordi den er for stor til å få plass på en vanlig PC,
+                    bor den i spesialbygde datasentere med tusenvis av kraftige
+                    prosessorer.
+                </p>
+                <ul>
+                    <li>
+                        <b>Fordeler:</b> Den har tilgang til enormt mye kunnskap,
+                        gjør færre feil på komplisert logikk, og oppdateres jevnlig
+                        av leverandøren uten at du trenger å gjøre noe.
+                    </li>
+                    <li>
+                        <b>Ulemper:</b> Du er avhengig av leverandørens retningslinjer,
+                        prisendringer og oppetid. Bedrifter må også være nøye med
+                        å ikke dele sensitiv informasjon dersom det ikke foreligger
+                        strenge personvernsavtaler.
+                    </li>
+                </ul>
+                <li><b>Lokal modell</b></li>
+                <p>
+                    En lokal modell er en komprimert eller mindre versjon av en
+                    språkmodell som lastes ned som en fil og kjøres lokalt ved
+                    hjelp av verktøy som for eksempel Ollama eller LM Studio.
+                </p>
+                <ul>
+                    <li>
+                        <b>Fordeler:</b> Full kontroll over egne data gjør dette
+                        ideelt for advokater, leger, utviklere med hemmelig kildekode,
+                        eller privatpersoner som ønsker maksimal sikkerhet. Du kan
+                        også finjustere modellen uten begrensninger fra en leverandør.
+                    </li>
+                    <li>
+                        <b>Ulemper:</b> Jo smartere modellen skal være, desto dyrere
+                        datamaskin trenger du. En bærbar PC uten dedikert skjermkort
+                        vil slite med å kjøre de bedre lokale modellene raskt nok.
+                    </li>
+                </ul>
+            </ol>
+        </article>
+
+        <article>
+            <h2>KI som kritiker og kildekritikk</h2>
+            <h3>Kildekritikk: hva er en god kilde?</h3>
+            <p>
+                En god kilde er til å stole på, objektiv, nøyaktig og passer
+                til det du lurer på. For å vurdere om en kilde er god, kan du
+                bruke huskeregelen TONE; troverdighet, objektivitet, nøykatighet,
+                egnethet.
+            </p>
+            <h3>Påstand, dokumentasjon og mening</h3>
+            <p>
+                Å skille mellom påstand, dokumentasjon og mening handler om å
+                skille mellom hva som hevdes, hva som kan beskrives, og hva som
+                er personlige vurderinger. Dette er en grunnleggende ferdighet
+                innen kritisk tekning og akademisk skriving.
+            </p>
+            <table border="1">
+                <thead>
+                    <th>Begrep</th>
+                    <th>Kjennetegn</th>
+                    <th>Kan det etterprøves?</th>
+                    <th>Eksempel</th>
+                </thead>
+                <tbody>
+                    <td>Påstand</td>
+                    <td>En utsangssetning som hevder at noe er tilfelle, ofte brukt som hovedpoeng i en diskusjon.</td>
+                    <td>Ja, i prinsippet, men mangler bevis alene.</td>
+                    <td>"Skolemat fører til bedre karakterer"</td>
+                </tbody>
+                <tbody>
+                    <td>Dokumentasjon</td>
+                    <td>Etterprøvbare fakta, data, forskning eller kilder som støtter eller motbeviser en påstand.</td>
+                    <td>Ja, gjennom pålitelige kilder og målinger.</td>
+                    <td>"En studie fra 2023 viste at elever med gratis lunsj økte snittet med 0,4 karakterpoeng"</td>
+                </tbody>
+                <tbody>
+                    <td>Mening</td>
+                    <td>En subjektiv vurdering, oppfatning, følelse eller verdistandpunkt.</td>
+                    <td>Nei, fordi den bygger på smak, verdier eller personlig syn.</td>
+                    <td>"Gratis skolemat er det viktigste tiltaket vi kan innføre i skolen"</td>
+                </tbody>
+                </table>
+            <h3>Teste eget standpunkt mot KI-motargumenter</h3>
+            <p>
+                Det å bruke KI som en sparringspartner er en svært effektiv måte
+                å finpusse argumentasjonen din på og avdekke svake punkter før
+                en debatt, presentasjon eller tekstinnlevering.
+            </p>
+
+            <h3>Sykofanti</h3>
+            <p>
+                Sykofanti i KI er en modells tendens til å prioritere å være enig
+                med brukeren eller smigre vedkommende fremfor å være faktabasert,
+                objektiv eller ha rett.
+                <br>
+                Når en KI er sykofantisk, kan den være enig i feilaktige påstander
+                eller regnestykker du presenterer. Den kan endre eller trekke tilbake
+                et helt riktig svar så fort du hinter om at du er uenig. Den kan
+                bekrefte dårlige holdninger, usunne meninger eller uansvarlig
+                atferd i stedet for å tilby sunn motvekt.
+                <br>
+                Hvorfor kan dette skje? KI-modeller trenes ofte opp til å være
+                "hjelpsom", "ufarlig" og likt av mennesker. Mennesker som trener
+                modellene har en ubevisst tendens til å belønne svar som stryker
+                dem med hårene eller bekrefter deres egne synspunkt. Modellene
+                optimaliserer også for å gjøre brukeren umiddelbart fornøyd i
+                samtalen fremfor å gi langsiktig korrekte, men kanskje ubehagelige
+                svar.
+            </p>
+        </article>
+
+        <article>
+            <h2>Lokal KI, personvern og EU AI Act</h2>
+            <h3>Modellstørrelse, kvantisering og RAM</h3>
+            <p>
+                En språkmodell må få plass i raskt minne, RAM eller VRAM, fordi
+                maskinvaren må lese alle modellens parametere for hvert eneste ord
+                den genererer. Hvis modellen er større enn tilgjengelig minne,
+                faller ytelsen dramatisk eller programmet krasjer.
+            </p>
+            <p>
+                <b>Hvorfor er minne avgjørende?</b> Når en AI-modell skriver en tekst,
+                må den hente og beregne milliarder av tall for hvert nye ord.
+                Skjermkortminne, VRAM, og systemminne, RAM, er ekstremt raskt.
+                Hvis modellen må lastes fra en vanlig SSD, blir genereringen treg.
+                I tillegg til selve modellen trenger systemet ekstra minne for
+                å huske samtalen eller dokumentet du jobber med.
+                <br>
+                <b>Kvantisering</b> er en komprimeringsteknikk som reduserer
+                nøyaktigheten til tallene i modellen for å spare minne.
+            </p>
+
+            <h3>EU AI Act</h3>
+            <p>
+                <b>KI-forordningen</b> er EU sitt regelverk for KI. Loven trådte
+                i kraft 1. august 2024, og hovedregelen er en risikobasert
+                tilnærming som deler KI-systemer inn i ulike kategorier basert
+                på skadepotensial.
+            </p>
+            <h4>De fire risikonivåene</h4>
+            <ol>
+                <li><b>Uakseptabel risiko &#40;forbudt&#41;:</b></li>
+                <ul>
+                    <li>
+                        Systemer som truer mennesker sikkerhet, frihet eller
+                        rettigheter.
+                    </li>
+                    <li>
+                        Dette inkluderer blant annet sosial skåring av borgere,
+                        manipulerende KI som utnytter sårbare grupper, og sanntids
+                        biometrisk fjernidentifikasjon på offentlige steder.
+                    </li>
+                </ul>
+                <li><b>Høy risiko &#40;strenge krav&#41;:</b></li>
+                <ul>
+                    <li>
+                        KI som brukes i kritiske samfunnsfunksjoner, som kritisk
+                        infrastruktur, utdanning, rekruttering/HR, rettshåndhevelse,
+                        helse og asyl/grensekontroll.
+                    </li>
+                    <li>
+                        Krever grundig dokumentasjon, risikostyring, menneskelig
+                        tilsyn og en samsvarsvurdering før de tas i bruk.
+                    </li>
+                </ul>
+                <li><b>Begrenset risiko &#40;transparensplikter&#41;:</b></li>
+                <ul>
+                    <li>
+                        Systemer som interagerer direkte med mennesker, som
+                        chattebotter eller generering av deepfakes og tekst i
+                        offentlig interesse.
+                    </li>
+                    <li>
+                        Brukere må gjøres oppmerksomme på at de samhandler med
+                        en KI, og innholdet må merkes som kunstig generert.
+                    </li>
+                </ul>
+                <li><b>Minimal eller ingen risiko &#40;uregulert&#41;:</b></li>
+                <ul>
+                    <li>
+                        Utgjør størstedelen av kommersiell bruk i dag, som enkle
+                        spamfiltre eller videospill. Her gjelder ingen spesifikke
+                        obligatoriske restriksjoner, selv om frivillige etiske
+                        retningslinjer oppmuntres.
+                    </li>
+                </ul>
+            </ol>
+            <h4>Hvem gjelder loven for?</h4>
+            <p>
+                Regelverket gjelder alle som utvikler, distribuerer eller bruker
+                KI-systemer i EU og EØS-markedet, uavhengig av hvor selskapet
+                holder til. Utvikleren har de strengeste pliktene, mens brukeren
+                har et lavere, men likefullt eksisterende ansvar for å bruke
+                verktøyet forsvarlig.
+            </p>
+        </article>
+
+        <article>
+            <h2>Akademisk skriving</h2>
+            <p>
+                Akademisk skriving er en fellesbetegnelse for skriveprosesser
+                og tekster som produseres i høyere utdanning og akademia. Det
+                handler om å formidle fagkunnskap, analysere problemstillinger
+                og delta i en vitenskapelig diskurs.
+            </p>
+            <ul> <b>Kjennetegn på akademisk skriving</b>
+                <li>
+                    <b>Formell og uformell skriving:</b> Omfatter alt av uformelle
+                    notater, sammendrag og tenkeskriving til formelle tekster som
+                    essay, rapporter, bachelor- og masteroppgaver samt vitenskapelige
+                    artikler.
+                </li>
+                <li>
+                    <b>Klarhet og presisjon:</b> Språket skal være objektivt,
+                    nøyaktig og ryddig, ofte med utstrakt bruk av fagspesifikk
+                    terminologi.
+                </li>
+                <li>
+                    <b>Argumentasjon og drøftning:</b> Teksten skal være overbevisende,
+                    bygget på logisk struktur, kritisk tenkning og retoriske prinsipper.
+                </li>
+                <li>
+                    <b>Etterettelig kildebruk:</b> Forskning bygger på det andre
+                    har gjort før. Du må alltid oppgi nøyaktige referanser til
+                    kildene dine slike at leseren kan sjekke påstandene.
+                </li>
+                <li>
+                    <b>Faglige konvensjoner:</b> Ulike fagfelt har ulike krav til
+                    form, struktur og referansestiler.
+                </li>
+            </ul>
+            <h3>Faglig spørsmål</h3>
+            <p>
+                Presenter temaet, bakgrunnen, avgrensningen og selve <i>problemstillingen</i>
+                som skal undersøkes. Gi gjerne en leserveiledning for resten av oppgaven.
+                Innledning ca 10%. Hoveddel ca 80%. Nøytral gjennomgang av teori,
+                begreper og pensum med egne ord. Bruk teorien til å belyse
+                problemstillingen. Vei argumenter mot motargumenter, se saken
+                fra flere vinkler, og koble funnene opp mot kildene dine. Avslutning
+                ca 10%. Oppsummer hovedfunnene dine, gi et konkret svar på problemstillingen,
+                og løft blikket.
+            </p>
         </article>
     </main>
 
