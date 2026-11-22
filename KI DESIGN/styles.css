@@ -1,4 +1,23 @@
-* {
+body {
     background-color: lightblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+li {
+    text-align: left;
+    margin: 0 0 0.4em 0;
+    line-height: 1.4;
+}
+
+ul {
+    max-width: 800px;
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+li p {
+    margin: 0;
 }
